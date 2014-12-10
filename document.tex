@@ -1,28 +1,123 @@
-%%This is a very basic article template.
-%%There is just one section and two subsections.
-\documentclass{article}
-\usepackage[spanish]{babel}
-\usepackage{amsmath}
-\title{\LARGE Partition.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paritition Presentation
+% LaTeX 
+% Version 1.0 (08/12/14)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+\usetheme{Madrid}
+}
+
+\usepackage{graphicx} % Permite introducir imagenes
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{amsfonts}  % Simbolos
+\usepackage{amssymb}  % Simbolos
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+% Titulo de la presentacion
+\title[Short title]{ Partition }
+
+% Autores
 \author{Sawan J. Kapai Harpalani \and
 	Adri\'an Gonz\'alez Mart\'in \and
 	Sara Mart\'in Molina \and
 	Enrique Tejera Gonz\'alez
 }
 
-\date{8 de diciembre 2014}
+% Institucion a la que pertenecen los colaboradores
+\institute[ULL] 
+{
+Universidad de La Laguna \\ 
+\medskip
+}
 
+% Fecha de hoy
+\date{\today} 
+
+% Comienzo del documento
 \begin{document}
-\maketitle
 
-\section{Introducci\'on}
+\begin{frame}
 
-En teor\'ia de la complejidad computacional, NP es el acr\'onimo en ingl\'es de
-nondeterministic polynomial time ("tiempo polinomial no determinista"). 
-Es el conjunto de problemas que pueden ser resueltos en tiempo polin\'omico 
-por una m\'aquina de Turing no determinista.
+% Imprime el titulo
+\titlepage 
+
+\end{frame}
+
+\begin{frame}
+
+% Tabla de contenidos, quitar si no se desea 
+\frametitle{Overview} 
+
+% Throughout your presentation, if you choose to use \section{} and
+% \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\tableofcontents 
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	DIAPOSITIVAS DE LA PRESENTACION
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+% Las secciones sirven para organizar las tablas de contenidos
+% todos los bloques seran visibles en la tabla de contenidos
+\section{Partition} 
+%------------------------------------------------
+
+% Ejemplo de subseccion
+\subsection{Subsection Example} 
+
+\begin{frame}
+\frametitle{Partition}
+% Comenzamos una enumeracion
+\begin{itemize}
+  \item Teorema: Partition es NP-Completo.
+  \item Instancia:  A  a $\in$ A S(a) $\in$ \(\mathbb{Z}\)$\textsuperscript{+}$.
+  \item Prueba: Es f\'acil ver que partition $\in$ NP, puesto que es un algoritmo
+  no determinista necesita s\'olo encontrar un subconjunto A' de A y comprobar el
+  tiempo polinomial que suma los tama\~{n}os de los elementos de A' es igual a la
+  suma de los elementos de A-A'.
+  
+\end{itemize}  
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Transformaci\'on 3DM a Partition}
+\begin{itemize}
+\item Se fijan los conjuntos W, X, Y con tamaño q y M que ser\'a una instancia
+arbitraria del 3DM (M $\subseteq$ $W \times X \times Y$).
+	$$W = w_{1}, w_{2}, w_{3}, \cdot\ldots\cdot w_{q}$$
+	$$X = x_{1}, x_{2}, x_{3}, \cdot\ldots\cdot x_{q}$$
+	$$Y = y_{1}, y_{2}, y_{3}, \cdot\ldots\cdot y_{q}$$
+	$$M = m_{1}, m_{2}, m_{3}, \cdot\ldots\cdot m_{k}$$ 
+	$$ k = |M|$$
+	
+\item Se debe construir un conjunto A, donde cada elemento tiene tama\~{n}o tal que S(a) $\in$ \(\mathbb{Z}\)$\textsuperscript{+}$ y ese A debe contener un subconjunto A' tal que:
+	$$\sum\limits_{a \in A'} S(a) = \sum\limits_{a \in A - A'} S(a) \iff matching(M)$$
+\item El conjunto A contendr\'a k + 2 elementos.
+\end{itemize}
+\end{frame}
 
 
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{FIN}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
