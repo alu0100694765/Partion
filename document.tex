@@ -20,6 +20,7 @@
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{amsfonts}  % Simbolos
 \usepackage{amssymb}  % Simbolos
+\usepackage{amsmath} % matematicos
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -55,28 +56,10 @@ Universidad de La Laguna \\
 
 \end{frame}
 
-\begin{frame}
-
-% Tabla de contenidos, quitar si no se desea 
-\frametitle{Overview} 
-
-% Throughout your presentation, if you choose to use \section{} and
-% \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
-\tableofcontents 
-\end{frame}
 
 %----------------------------------------------------------------------------------------
 %	DIAPOSITIVAS DE LA PRESENTACION
 %----------------------------------------------------------------------------------------
-
-%------------------------------------------------
-% Las secciones sirven para organizar las tablas de contenidos
-% todos los bloques seran visibles en la tabla de contenidos
-\section{Partition} 
-%------------------------------------------------
-
-% Ejemplo de subseccion
-\subsection{Subsection Example} 
 
 \begin{frame}
 \frametitle{Partition}
@@ -111,6 +94,117 @@ arbitraria del 3DM (M $\subseteq$ $W \times X \times Y$).
 \end{itemize}
 \end{frame}
 
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Construcci\'on}
+Se construye en dos pasos:
+\begin{enumerate}
+\item Primer paso:
+\begin{itemize}
+\item Los primeros k elementos de A est\'an asociados con las k tripletas de M
+	  $$ a_{i} \Rightarrow m_{i}, 1 \leq i \leq k $$
+\item El tama\~{n}o de cada elementos se obtiene de su representaci\'on binaria.
+	  $$ |w| = |x| = |y| = q \Rightarrow p $$
+      $$p = [\log_2(k + 1)]$$
+\end{itemize}
+
+\end{enumerate}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Construcci\'on}
+\begin{enumerate}
+\item Primer paso:
+\begin{itemize}
+\item La representaci\'on para el tama\~{n}o del elemento $a_{i}$ depende de la tripleta:
+	$$m_{i} = (w_{f(i)}, x_{g(i)}, y_{h(i)}) \in matching(M)$$
+\item Otra forma de obtener el tama\~{n}o de $a_{i}$:
+	$$S(a_{i}) = 2\textsuperscript{p(3q - f(i))} + 2\textsuperscript{p(2q - g(i))} + 2\textsuperscript{p(q - h(i))}$$
+\end{itemize}
+
+\end{enumerate}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Construcci\'on}
+\begin{enumerate}
+\item Primer paso:
+\begin{itemize}
+\item Si se fija:
+	$$B = \sum\limits_{j=0}^{3q -1} 2\textsuperscript{pj}$$
+\item Entonces:
+	$$A'\subseteq {a_{i}: 1 \leq i \leq k}$$
+    $$\sum\limits_{a\in A'} = B \iff M' = {m_{i}: a_{i} \in A' \Rightarrow matching(M)}$$
+\end{itemize}
+
+\end{enumerate}
+
+\end{frame}
+
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Construcci\'on}
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Segundo paso:
+\begin{itemize}
+\item Se especifican los dos \'ultimos elementos de A ($b_{1}$ y $b_{2}$) cuyos tama\~{n}os son:
+	$$S(b_{1}) = 2(\sum\limits_{i=1}^{k}S(a_{i})) - B = B$$
+    $$S(b_{2}) = 2(\sum\limits_{i=1}^{k}S(a_{i})) + B = 2B$$
+\item Ambos pueden ser especificados en binario con m\'as de (3pq + 1) bits.
+\end{itemize}
+
+\end{enumerate}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Construcci\'on}
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Segundo paso:
+\begin{itemize}
+\item Suponiendo que se tiene un conjunto $A' \subseteq A$ se cumple:
+	$$\sum\limits_{a \in A'} S(a) = \sum\limits_{a \in A - A'} S(a)$$
+\item Por lo que las sumas de ambos ser\'a:
+	$$ 2\sum\limits_{i=1}^{k}S(a_{i})$$
+ \item A o A - A1 contendr\'a $b_{1}$ pero no $b_{2}$.
+\end{itemize}
+
+\end{enumerate}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Construcci\'on}
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Segundo paso:
+\begin{itemize}
+\item El resto de elementos formar\'an un conjunto 
+	$$a_{i}: 1 \leq i \leq k$$
+\item La suma de los tama\~{n}os suman B por lo que es un matching de M' en M.
+\item A la inversa:
+	$$M' \subseteq M \Rightarrow matching(M) \Rightarrow {b_{1} \bigcup {a_{1}}: m_{i} \in M'} $$
+\end{itemize}
+
+\end{enumerate}
+
+\end{frame}
 
 %------------------------------------------------
 
