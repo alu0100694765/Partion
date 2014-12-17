@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.9)  16 DEC 2014 21:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.9)  17 DEC 2014 17:24
 entering extended mode
 **document.tex
 (C:\Users\Sawan\workspace\Partion\document.tex
@@ -733,17 +733,6 @@ Package: beamerinnerthemedefault 2013/10/15  (rcs-revision 65cb471f9634)
 terthemedefault.sty"
 Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )))
-! Use of \beamer@@@mode doesn't match its definition.
-<recently read> {
-                 
-l.15 \mode {
-            
-If you say, e.g., `\def\a1{...}', then you must always
-put `1' after `\a', since control sequence names are
-made up of letters only. The macro here has not been
-followed by the required stuff, so I'm ignoring it.
-
-
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\themes\theme\beamerth
 emeMadrid.sty"
 Package: beamerthemeMadrid 2010/06/17  (rcs-revision d02a7cf4d8ae)
@@ -764,12 +753,6 @@ Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
 terthemeinfolines.sty"
 Package: beamerouterthemeinfolines 2012/10/16  (rcs-revision 51a8c72084af)
 ))
-! Too many }'s.
-l.17 }
-      
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen188
@@ -986,19 +969,6 @@ line 77.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-
-! LaTeX Error: \mathbb allowed only in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77 \end{frame}
-                
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
 Overfull \hbox (159.98166pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -1006,19 +976,6 @@ Overfull \hbox (159.98166pt too wide) has occurred while \output is active
 [2
 
 ]
-
-! LaTeX Error: \mathbb allowed only in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.96 \end{frame}
-                
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
 Overfull \hbox (159.98166pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -1067,11 +1024,11 @@ Overfull \hbox (159.98166pt too wide) has occurred while \output is active
 
 [9
 
-] <images/partition.png, id=273, 1080.28593pt x 554.82281pt>
+] <images/partition.png, id=274, 1080.28593pt x 554.82281pt>
 File: images/partition.png Graphic file (type png)
 
 <use images/partition.png>
-Package pdftex.def Info: images/partition.png used on input line 218.
+Package pdftex.def Info: images/partition.png used on input line 223.
 (pdftex.def)             Requested size: 256.0748pt x 131.50934pt.
 
 Overfull \hbox (159.98166pt too wide) has occurred while \output is active
@@ -1091,11 +1048,11 @@ Overfull \hbox (159.98166pt too wide) has occurred while \output is active
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
  (C:\Users\Sawan\workspace\Partion\document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 233.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 233.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1103,7 +1060,7 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 233.
  ) 
 Here is how much of TeX's memory you used:
  16705 strings out of 493921
@@ -1125,10 +1082,11 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (
 x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on document.pdf (11 pages, 284858 bytes).
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on document.pdf (11 pages, 287562 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
+ 377 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
